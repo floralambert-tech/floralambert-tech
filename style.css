@@ -402,43 +402,20 @@ strong {
     top: 100px;
 }
 
-.image-placeholder {
+.image-container {
     width: 100%;
     aspect-ratio: 4/5;
-    background: var(--gradient);
     border-radius: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: var(--spacing-md);
-    position: relative;
     overflow: hidden;
+    margin-bottom: var(--spacing-md);
+    box-shadow: var(--shadow-lg);
 }
 
-.image-placeholder::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 100%);
-}
-
-.placeholder-text {
-    text-align: center;
-    color: white;
-    position: relative;
-    z-index: 1;
-}
-
-.placeholder-text span {
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     display: block;
-    font-size: var(--font-size-2xl);
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-}
-
-.placeholder-text small {
-    font-size: var(--font-size-base);
-    opacity: 0.9;
 }
 
 .about-card {
